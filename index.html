@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- navigation bar -->
+    <nav class="main-nav">
+      <div class="left">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="right">
+        <span>Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="switcher" onclick="checkBox()">
+          <span class="slider2 round"></span>
+        </label>
+      </div>
+    </nav>
+     <!-- navigation bar -->
+
+     <!-- top boxes -->
+     <div class="top-boxes">
+       <div class="boxes">
+
+         <div class="box">
+            <div class="top">
+              <img src="images/icon-facebook.svg" alt="" srcset=""><span>@nathanf</span>
+            </div>
+            <div class="main">
+              <p>1987</p>
+              <p>Followers</p>
+            </div>
+            <div class="footer-box">
+              <img src="images/icon-up.svg" alt="" srcset=""><span class="positive">12 Today</span>
+            </div>
+          </div>
+         </div>
+
+         <div class="box">
+            <div class="top">
+              <img src="images/icon-twitter.svg" alt="" srcset=""><span>@nathanf</span>
+            </div>
+            <div class="main">
+              <p>1044</p>
+              <p> Followers</p>
+            </div>
+            <div class="footer-box">
+              <img src="images/icon-up.svg" alt="" srcset=""><span class="positive">99 Today</span>
+            </div>
+          </div>
+         </div>
+
+         <div class="box">
+            <div class="top">
+              <img src="images/icon-instagram.svg" alt="" srcset=""><span>@realnathanf</span>
+            </div>
+            <div class="main">
+              <p>11k</p>
+              <p>Followers</p>
+            </div>
+            <div class="footer-box">
+              <img src="images/icon-up.svg" alt="" srcset=""><span class="positive">1099 Today</span>
+            </div>
+          </div>
+         </div>
+
+         <div class="box">
+            <div class="top">
+              <img src="images/icon-youtube.svg" alt="" srcset=""><span>Nathan F.</span>
+            </div>
+            <div class="main">
+              <p>8239</p>
+              <p>Subscribers</p>
+            </div>
+            <div class="footer-box">
+              <img src="images/icon-down.svg" alt="" srcset=""><span class="negative">144 Today</span>
+            </div>
+          </div>
+         </div>
+
+       </div>
+     </div>
+     <!-- top boxes -->
+     <header class="main-header">
+      Overview - Today
+     </header>
+     <!-- detail-boxes -->
+     <div class="portfolio">
+
+       <div class="box2">
+         <div class="top">
+           <span>Page Views</span> <img src="images" alt="">
+         </div>
+         <div class="bottom">
+           <span>87</span> <span><img src="images/icon-up.svg" alt="" srcset=""> 3%</span>
+         </div>
+       </div>
+   
+       <div class="box2">
+         <div class="top">
+           <span>Likes</span> <img src="images/icon-facebook.svg" alt="">
+         </div>
+         <div class="bottom">
+           <span>52</span> <span><img src="images/icon-down.svg" alt="" srcset="">2%</span>
+         </div>
+       </div>
+   
+       <div class="box2">
+         <div class="top">
+           <span>Likes</span> <img src="images/icon-instagram.svg" alt="">
+         </div>
+         <div class="bottom">
+           <span>5462</span> <span><img src="images/icon-up.svg" alt="" srcset="">2257%</span>
+         </div>
+       </div>
+   
+       <div class="box2">
+         <div class="top">
+           <span>Profile Views</span> <img src="images/icon-instagram.svg" alt="">
+         </div>
+         <div class="bottom">
+           <span>52k</span> <span><img src="images/icon-up.svg" alt="" srcset="">1375%</span>
+         </div>
+       </div>
+   
+       <div class="box2">
+         <div class="top">
+           <span>retweets</span> <img src="images/icon-twitter.svg" alt="">
+         </div>
+         <div class="bottom">
+           <span>117</span> <span><img src="images/icon-up.svg" alt="" srcset="">303%</span>
+         </div>
+       </div>
+   
+       <div class="box2">
+         <div class="top">
+           <span>Likes</span> <img src="images/icon-twitter.svg" alt="">
+         </div>
+         <div class="bottom">
+           <span>507</span> <span><img src="images/icon-up.svg" alt="" srcset="">553%</span>
+         </div>
+       </div>
+   
+       <div class="box2">
+         <div class="top">
+           <span>Likes</span> <img src="images/icon-youtube.svg" alt="">
+         </div>
+         <div class="bottom">
+           <span>107</span> <span><img src="images/icon-down.svg" alt="" srcset="">19%</span>
+         </div>
+       </div>
+   
+       <div class="box2">
+         <div class="top">
+           <span>Total Views</span> <img src="images" alt="">
+         </div>
+         <div class="bottom">
+           <span>1407</span> <span><img src="images/icon-down.svg" alt="" srcset="">12%</span>
+         </div>
+       </div>
+   
+     </div>
+
+
+     <!-- detail-boxes -->
+  </div>
+
+  
+  
+ 
+
+  
+  
+  <script src="script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Luis Colina</a>.
+  </div>
+</body>
+</html>
