@@ -12,3 +12,232 @@ html{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0 1rem;
+    padding: 0;
+    color: hsl(230, 17%, 14%);
+    
+}
+.wrapper{
+    display: grid;
+    grid-gap: 1.3rem;
+    padding: 0 1rem 1rem 1rem;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.main-nav .left{
+    display: block;
+}
+.main-nav .left h1{
+    margin-bottom: 0;
+}
+.main-nav .left p{
+    margin-top: 0;
+}
+.light-gray{
+    color: hsl(228, 12%, 44%);
+}
+.main-nav .right{
+    display: flex;
+    align-items: center;
+}
+.main-nav .right span{
+    padding-right: 0.4rem;
+}
+
+/* dark mode switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(223, 50%, 87%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider2:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider2 {
+    background-color: hsl(174, 86%, 45%);
+  }
+  
+  input:focus + .slider2 {
+    box-shadow: 0 0 1px hsl(223, 50%, 87%);
+  }
+  
+  input:checked + .slider2:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+  
+  /* Rounded sliders */
+  .slider2.round {
+    border-radius: 34px;
+  }
+  
+  .slider2.round:before {
+    border-radius: 50%;
+  }
+
+/* dark mode switch */
+
+/* boxes */
+.top-boxes{
+    width: 100%;
+}
+.boxes, .portfolio{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+    
+}
+.box:hover, .box2:hover{
+    background-color: hsl(230, 22%, 84%);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem 0;
+    border-radius: 5px;
+    transition: all 500ms ease; 
+}
+.facebook{
+    border-top: 4px solid var(--face);
+}
+.twitter{
+    border-top: 4px solid var(--tw);
+}
+.instagram{
+position: relative;
+}
+.instagra{
+    position:absolute;
+    height:4px;
+    width: 100%;
+    background-image: var(--insta);
+    bottom: 98.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.youtube{
+    border-top: 4px solid var(--ytb);
+}
+.box .main p:nth-child(1){
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.box .main{
+    flex-direction: column;
+}
+.box > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* boxes - top*/
+
+.main-header{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.portfolio{
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: hsl(227, 47%, 96%);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all 500ms ease; 
+}
+
+.box2 .top, .box2 .bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.box2 .bottom{
+    padding-top: 2rem;
+}
+
+/* utilities */
+
+.align-icons{
+    display: flex;
+    align-items: center;
+}
+.pr-05{
+    padding-right: 0.5rem;
+}
+.font-box2{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.p-300{
+    font-weight: 300;
+}
+.positive{
+    color: hsl(163, 72%, 41%);
+}
+.negative{
+    color: hsl(356, 69%, 56%);
+}
+
+/* dark-side */
+
+.dark-mode{
+    background-color: hsl(228, 28%, 20%);
+    color: white;
+}
